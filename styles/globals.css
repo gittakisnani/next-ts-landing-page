@@ -1,26 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --blue-primary: 68 132 244;
+  }
+  h1 {
+    @apply text-2xl md:text-3xl font-bold
+  }
+
+  h2 {
+    @apply text-xl md:text-2xl font-semibold
+  }
+
+  h3 {
+    @apply text-lg md:text-xl font-medium
+  }
+}
+
+
+@layer components {
+  .navBar__link {
+    @apply duration-300 ease-out hover:text-primary
+  }
+
+  .input {
+    @apply p-2 border duration-300 ease-in-out hover:border-primary focus:border-primary
+  }
+
+  .team__person {
+    @apply hover:scale-50 duration-200 ease-out
+  }
+
+  .feature {
+    @apply duration-200 ease-out hover:-translate-y-2 hover:bg-primary hover:text-white rounded-md
+  }
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}

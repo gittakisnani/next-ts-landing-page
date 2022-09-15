@@ -29,7 +29,7 @@ const Home: NextPage = () => {
     <div className='relative'>
       <Header />
       <Container>
-        <div className='flex flex-col-reverse md:flex-row md:justify-between gap-4 items-center p-4 md:p-6 my-14 md:my-18'>
+        <div id='home' className='flex flex-col-reverse md:flex-row md:justify-between gap-4 items-center p-4 md:p-6 my-14 md:my-18'>
           <div className='flex flex-col gap-4 text-center max-w-[80%] md:text-left items-center md:items-start md:max-w-[full]'>
           <Fade triggerOnce cascade direction='left'>
           <h1 className='text-black text-3xl md:text-5xl leading-10'>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             </Fade>
           </div>
         </div>
-        <div className='my-14 md:my-18'>
+        <div id='features' className='my-14 md:my-18'>
          <Fade triggerOnce cascade>
           <Section title='Imagine Features' desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero." />
          </Fade>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
         ))}
       </Container>
 
-        <div className='py-14 md:py-18 bg-gray-100/60'>
+        <div id='aboutus' className='py-14 md:py-18 bg-gray-100/60'>
           <Container>
             <Fade triggerOnce>
             <h2 className='text-3xl md:text-4xl capitalize font-semibold mb-2 text-center'>About us</h2>
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
             
           </Container>
         </div>
-        <div className='bg-white my:14 md:my-18'>
+        <div id='ourteam' className='bg-white my:14 md:my-18'>
           <Container>
               <Section title='Our Team' desc='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero.' />
               <div className='mt-12 grid grid-cols-1 md:grid-cols-3 gap-6'>
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
               </div>
           </Container>
         </div>
-        <div className='py-14 md:py-18 md:pb-10 bg-gray-100'>
+        <div id="testimonials" className='py-14 md:py-18 md:pb-10 bg-gray-100'>
           <Container>
             <h2 className='text-3xl md:text-4xl capitalize font-bold text-center'>Testimonials</h2>
             <div className='my-6'>
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
             </div>
           </Container>
         </div>
-        <div className='py-14 md:py-18'>
+        <div id='blog' className='py-14 md:py-18'>
           <Container>
           <h2 className='text-3xl md:text-4xl capitalize font-semibold text-center'>Blog posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
           </div>
           </Container>
         </div>
-        <div className='bg-blue-400/40 py-14 md:py-18'>
+        <div id='contact' className='bg-blue-400/40 py-14 md:py-18'>
           <Container>
            <Fade triggerOnce>
            <h2 className='text-3xl md:text-4xl capitalize font-semibold text-center text-white'>Contact us</h2>

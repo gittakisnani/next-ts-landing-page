@@ -19,7 +19,7 @@ export const navLinks: NavLink[] = [
             },
             {
                 text: 'Our Team',
-                link: '/'
+                link: '#ourteam'
             },
             {
                 text: 'More Links',
@@ -43,14 +43,14 @@ export const navLinks: NavLink[] = [
     },
     {
         text: 'Testimonials',
-        link: '#'
+        link: '#testimonials'
     }, 
     {
         text: 'Blog',
-        link: '#'
+        link: '#blog'
     },
     {
         text: 'Contact',
-        link: '#'
+        link: '#contact'
     }
 ]

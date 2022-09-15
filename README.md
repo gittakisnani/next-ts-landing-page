@@ -1,34 +1,36 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+##### This project is a landing page made using:
 
-First, run the development server:
+- React js (Next js)
+- Typescript
+- Tailwindcss
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##### Animation library used in this project:
+[React awesome reveal]('https://www.npmjs.com/package/react-awesome-reveal)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Deployed in Vercel
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[Take a look]('https://next-ts-landing-page.vercel.app/')
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+#### 👨‍💻 Want to contribute?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the project:
+    - Click the gray `Fork` button in the top right of this page. This creates your copy of the project and saves it as a new repository in your github account
+2. Create a New Branch:
+    - On your new repository's page, click the gray 'master' button in the upper left to reveal a dropdown menu.
+    - Enter the name of your new branch in the text box. (Branch names usually make a reference to what is being changed. Example: `nameAdd`).
+3. Edit:
+    - On the top right of the Readme file, click on the pencil icon to edit the file by adding your name.
+    - After editing the Readme file, add a commit message and click on the green button saying "Commit Changes". Make sure you have selected the branch you have created.
+4. Raise a Pull Request:
+    - Click `Pull Requests` (which is the third option at the top of this page after the options `Code` and `Issues`).
+    - Click the green `New Pull Request` button. This will prep the new pull request for you by autofilling the `base repository`: base with 'next-ts-landing-page: main' AND autofilling your `head repository: compare` with 'your repository: master'
+    - Click on your head repository's `compare` dropdown, and switch branches from your 'main' branch to `<new branch name>`.
+    - Finally, click the green `Create Pull Request` button. Great job! You did it!
+    
+You can ask questions by raising an [issue]('https://github.com/gittakisnani/next-ts-landing-page/issues/new/choose).

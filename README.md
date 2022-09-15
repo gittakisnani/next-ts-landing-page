@@ -32,5 +32,5 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - Click the green `New Pull Request` button. This will prep the new pull request for you by autofilling the `base repository`: base with 'next-ts-landing-page: main' AND autofilling your `head repository: compare` with 'your repository: master'
     - Click on your head repository's `compare` dropdown, and switch branches from your 'main' branch to `<new branch name>`.
     - Finally, click the green `Create Pull Request` button. Great job! You did it!
-    
-You can ask questions by raising an [issue]('https://github.com/gittakisnani/next-ts-landing-page/issues/new/choose).
+
+You can ask questions by raising an [issue]('https://github.com/gittakisnani/next-ts-landing-page/issues/new/choose').

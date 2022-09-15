@@ -9,7 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 ##### Animation library used in this project:
-[React awesome reveal]('https://www.npmjs.com/package/react-awesome-reveal)
+[React awesome reveal]('https://www.npmjs.com/package/react-awesome-reveal')
 
 
 ### Deployed in Vercel

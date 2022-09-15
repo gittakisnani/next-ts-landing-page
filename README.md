@@ -9,12 +9,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 ##### Animation library used in this project:
-[React awesome reveal]('https://www.npmjs.com/package/react-awesome-reveal')
+[React awesome reveal](https://www.npmjs.com/package/react-awesome-reveal)
 
 
 ### Deployed in Vercel
 
-[Take a look]('https://next-ts-landing-page.vercel.app/')
+[Take a look](https://next-ts-landing-page.vercel.app/)
 
 
 #### 👨‍💻 Want to contribute?
@@ -33,4 +33,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - Click on your head repository's `compare` dropdown, and switch branches from your 'main' branch to `<new branch name>`.
     - Finally, click the green `Create Pull Request` button. Great job! You did it!
 
-You can ask questions by raising an [issue]('https://github.com/gittakisnani/next-ts-landing-page/issues/new/choose').
+You can ask questions by raising an [issue](https://github.com/gittakisnani/next-ts-landing-page/issues/new/choose).

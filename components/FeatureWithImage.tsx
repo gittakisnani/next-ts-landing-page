@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Bookmark from '../public/assets/Bookmark.svg'
 import { CardProps } from '../types/types'
 import Card from './Card'
+import { Fade } from 'react-awesome-reveal'
 
 const FeatureWithImage = ({ index, person } : { index: number, person: CardProps}) => {
     const className = index % 2 ? 'md:flex-row' : 'md:flex-row-reverse'
@@ -9,9 +10,12 @@ const FeatureWithImage = ({ index, person } : { index: number, person: CardProps
     <div 
     className={`my-14 md:my-18 flex flex-col md:items-center min-h-[80vh] gap-10 ${className}`}>
               <div className='md:flex-gow'>
-                <Image src={Bookmark} alt='Bookmark' />
+                <Fade triggerOnce direction={index % 2 ? 'left' : 'right'}>
+                    <Image src={Bookmark} alt='Bookmark' />
+                </Fade>
               </div>
-              <div className='flex flex-col gap-4 md:basis-[45%]'>
+            <div className='flex flex-col gap-4 md:basis-[45%]'>
+              <Fade triggerOnce cascade direction={!(index % 2) ? 'left' : 'right'}>
                 <h2 className='text-3xl md:text-4xl md:max-w-[400px] !leading-[3rem]'>
                   Communicate and gather feedback
                 </h2>
@@ -19,7 +23,8 @@ const FeatureWithImage = ({ index, person } : { index: number, person: CardProps
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.
                 </p>
                 <Card {...person}  />
-              </div>
+              </Fade>
+            </div>
     </div>
   )
 }

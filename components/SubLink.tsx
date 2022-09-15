@@ -11,9 +11,9 @@ const SubLink = ({ text, link, secondSubLinks }: SubLink) => {
     const handleSecondSubLink = () => setSecondSubLink(!secondSubLink)
   return (
     <div className='md:relative bg-inherit'>
-    <div className='flex justify-between items-center gap-2'>
+    <div className='flex justify-between items-center gap-2 hover:bg-[#d1d1d1]/40 md:hover:bg-inherit'>
         <Link href={link!}>
-            <a className='navBar__link p-2 hover:bg-[#d1d1d1]/40 md:hover:bg-inherit'>{text}</a>
+            <a className='navBar__link p-2 '>{text}</a>
         </Link>
         {secondSubLinks && 
                 <button onClick={handleSecondSubLink}>

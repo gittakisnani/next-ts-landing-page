@@ -2,7 +2,8 @@ import { StaticImageData } from "next/image"
 import { ComponentElement, ReactElement, ReactNode } from "react"
 
 export type ContainerProps = {
-    children: ReactNode
+    children: ReactNode,
+    className?: string
 }
 
 export interface WindowSize {

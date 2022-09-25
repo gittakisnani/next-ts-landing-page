@@ -24,12 +24,20 @@ import Blog3 from '../public/assets/Blog3.webp'
 import Blog from '../components/Blog'
 import Footer from '../components/Footer'
 import { Fade } from 'react-awesome-reveal'
+import observer from '../utils/observer'
 const Home: NextPage = () => {
+  if(typeof document !== "undefined" && typeof IntersectionObserver !== "undefined") {
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(sec => observer().observe(sec))
+  }
+
+
   return (
     <div className='relative'>
       <Header />
       <Container>
-        <div id='home' className='flex flex-col-reverse md:flex-row md:justify-between gap-4 items-center p-4 md:p-6 my-14 md:my-18'>
+        <section id='home' className='flex flex-col-reverse md:flex-row md:justify-between gap-4 items-center p-4 md:p-6 my-14 md:my-18'>
           <div className='flex flex-col gap-4 text-center max-w-[80%] md:text-left items-center md:items-start md:max-w-[full]'>
           <Fade triggerOnce cascade direction='left'>
           <h1 className='text-black text-3xl md:text-5xl leading-10'>
@@ -48,8 +56,8 @@ const Home: NextPage = () => {
               <Image src={Investing} alt='Investing' className='z-0' />
             </Fade>
           </div>
-        </div>
-        <div id='features' className='my-14 md:my-18'>
+        </section>
+        <section id='features' className='my-14 md:my-18'>
          <Fade triggerOnce cascade>
           <Section title='Imagine Features' desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero." />
          </Fade>
@@ -60,13 +68,13 @@ const Home: NextPage = () => {
                 </Fade>
             ))}
           </div>
-        </div>
+        </section>
         {PERSONS.map((person, index) => (
           <FeatureWithImage index={index} key={index} person={{...person, desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}} />
         ))}
       </Container>
 
-        <div id='aboutus' className='py-14 md:py-18 bg-gray-100/60'>
+        <section id='aboutus' className='py-14 md:py-18 bg-gray-100/60'>
           <Container>
             <Fade triggerOnce>
             <h2 className='text-3xl md:text-4xl capitalize font-semibold mb-2 text-center'>About us</h2>
@@ -100,8 +108,8 @@ const Home: NextPage = () => {
             </div>
             
           </Container>
-        </div>
-        <div id='ourteam' className='bg-white my:14 md:my-18'>
+        </section>
+        <section id='ourteam' className='bg-white my:14 md:my-18'>
           <Container>
               <Section title='Our Team' desc='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero.' />
               <div className='mt-12 grid grid-cols-1 md:grid-cols-3 gap-6'>
@@ -110,8 +118,8 @@ const Home: NextPage = () => {
                 ))}
               </div>
           </Container>
-        </div>
-        <div id="testimonials" className='py-14 md:py-18 md:pb-10 bg-gray-100'>
+        </section>
+        <section id="testimonials" className='py-14 md:py-18 md:pb-10 bg-gray-100'>
           <Container>
             <h2 className='text-3xl md:text-4xl capitalize font-bold text-center'>Testimonials</h2>
             <div className='my-6'>
@@ -134,8 +142,8 @@ const Home: NextPage = () => {
               </Swiper>
             </div>
           </Container>
-        </div>
-        <div id='blog' className='py-14 md:py-18'>
+        </section>
+        <section id='blog' className='py-14 md:py-18'>
           <Container>
           <h2 className='text-3xl md:text-4xl capitalize font-semibold text-center'>Blog posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
@@ -144,8 +152,8 @@ const Home: NextPage = () => {
             ))}
           </div>
           </Container>
-        </div>
-        <div id='contact' className='bg-blue-400/40 py-14 md:py-18'>
+        </section>
+        <section id='contact' className='bg-blue-400/40 py-14 md:py-18'>
           <Container>
            <Fade triggerOnce>
            <h2 className='text-3xl md:text-4xl capitalize font-semibold text-center text-white'>Contact us</h2>
@@ -200,7 +208,7 @@ const Home: NextPage = () => {
               </Fade>
            </div>
           </Container>
-        </div>
+        </section>
           <Footer />
     </div>
   )

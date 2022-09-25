@@ -14,7 +14,7 @@ const NavLink = ({ text, link, subLinks }: NavLink) => {
     return (
         <div className="md:relative bg-inherit">
             <div className="flex gap-2 items-center justify-between">
-                <Link href={link!} passHref>
+                <Link href={link!}>
                     <a className="navBar__link capitalize">{text}</a>
                 </Link>
                 {subLinks &&
